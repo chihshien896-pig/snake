@@ -9,6 +9,8 @@ desktop.ini
 credentials.*
 
 # Claude Code 本地設定（含 permissions、可能記錄 token，絕不上雲）
+firebase-debug.log
+.firebaserc
 .claude/
 
 # Node.js

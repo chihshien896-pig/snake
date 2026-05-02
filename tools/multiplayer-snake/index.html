@@ -23,7 +23,28 @@
         </div>
     </div>
 
-    <!-- 之後會加入 Firebase SDK -->
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+
+    <script>
+        // Firebase 配置 (從環境中獲取)
+        const firebaseConfig = {
+            projectId: "my-teaching-tools-235a0",
+            appId: "1:607804261156:web:7f96ea7820a35d80f729b1",
+            storageBucket: "my-teaching-tools-235a0.firebasestorage.app",
+            apiKey: "AIzaSyDm2MCsTFcQjQx-J-YZyV9tFCI_RT0xWps",
+            authDomain: "my-teaching-tools-235a0.firebaseapp.com",
+            messagingSenderId: "607804261156",
+            databaseURL: "https://my-teaching-tools-235a0-default-rtdb.firebaseio.com/"
+        };
+        // 初始化 Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.database();
+        const auth = firebase.auth();
+    </script>
+
     <script src="game.js"></script>
 </body>
 </html>
