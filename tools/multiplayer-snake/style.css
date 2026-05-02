@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden; /* 防止滾動條 */
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#gameCanvas {
+    display: block;
+    background-color: #0d0d0d;
+}
+
+#ui-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* 讓 UI 不會擋住滑鼠操作遊戲 */
+}
+
+/* 排行榜樣式 */
+#leaderboard {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(20, 20, 20, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    min-width: 150px;
+}
+
+#leaderboard h3 {
+    font-size: 14px;
+    color: #00ffff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#rank-list {
+    list-style: none;
+    font-size: 13px;
+}
+
+#rank-list li {
+    margin-bottom: 5px;
+}
+
+/* 分數資訊樣式 */
+#score-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff00ff;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
